@@ -57,3 +57,20 @@ ul {
   padding-left: 25px;
 }
 
+nav {
+  text-align: center;
+  padding: 15px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #4b6cb7;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2a3d66;
+}

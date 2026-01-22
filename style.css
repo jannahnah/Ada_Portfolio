@@ -8,55 +8,7 @@ body {
   color: #333;
 }
 
-header {
-  text-align: center;
-  background: #4b6cb7;
-  color: #fff;
-  padding: 40px 20px;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.2rem;
-}
-
-header p {
-  font-size: 1.1rem;
-}
-
-/* Section Styles */
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-h2 {
-  border-bottom: 3px solid #4b6cb7;
-  padding-bottom: 8px;
-  margin-bottom: 15px;
-}
-
-/* Project Cards */
-.project {
-  background: white;
-  border-radius: 8px;
-  border-left: 5px solid #4b6cb7;
-  padding: 15px 20px;
-  margin-bottom: 18px;
-}
-
-.project h3 {
-  margin-top: 0;
-}
-
-/* List Styles */
-ul {
-  list-style-type: square;
-  padding-left: 25px;
-}
-
+/* Navigation */
 nav {
   text-align: center;
   padding: 15px;
@@ -69,8 +21,84 @@ nav a {
   text-decoration: none;
   color: #4b6cb7;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
   color: #2a3d66;
+}
+
+/* Header / Hero */
+header {
+  text-align: center;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: #fff;
+  padding: 50px 20px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Section Styles */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  border-bottom: 3px solid #4b6cb7;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #182848;
+}
+
+/* Project Cards */
+.project {
+  background: white;
+  border-radius: 8px;
+  border-left: 5px solid #4b6cb7;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #182848;
+}
+
+/* List Styles */
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+/* Responsive Text */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .project {
+    padding: 15px;
+  }
 }

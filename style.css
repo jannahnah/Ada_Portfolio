@@ -102,3 +102,10 @@ ul {
     padding: 15px;
   }
 }
+
+.project-img {
+  width: 100%;
+  border-radius: 6px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+}

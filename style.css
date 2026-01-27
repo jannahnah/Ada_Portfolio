@@ -414,7 +414,7 @@ body,
   .nav-toggle {
     display: block;
   }
-  
+
   .nav-links {
     position: absolute;
     top: 100%;
@@ -424,12 +424,12 @@ body,
     flex-direction: column;
     gap: 1.5rem;
     padding: 2rem;
-    display: none;
+    display: flex;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
 
   .nav-links.active {
-    display: flex;
+    max-height: 300px;
   }
 
   .nav-links a {

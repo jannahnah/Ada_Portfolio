@@ -502,7 +502,7 @@ body {
 @media (max-width: 900px) {
   .image-wrapper::before {
     width: 350px;
-    height: 350px;
+    height: 325px;
   }
 }
 

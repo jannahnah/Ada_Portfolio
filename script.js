@@ -24,8 +24,13 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
+if (!navLinks || !navToggle) {
+  console.error("Navigation elements not found");
+}
+
 navToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+  navToggle.textContent = navLinks.classList.contains("active") ? "✕" : "☰";
 });
 
 // Close menu when a link is clicked
